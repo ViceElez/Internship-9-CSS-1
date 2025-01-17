@@ -127,6 +127,16 @@
     width: 40px;
     height: 40px;
 }
+.headerDiv{
+    max-width: 450px;
+    text-align: center;
+    margin: 0 auto;
+}
+.subheaderDiv{
+    max-width: 495px;
+    text-align: center;
+    margin: 0 auto;
+}
 @media(max-width:1030px){
     .elementToHide{
         display: none;
@@ -140,4 +150,49 @@
     .rightHeadDiv{
         margin-top: 50px;
     }
+    .headerText{
+        font-size: 36px;
+    }
+    .headerDiv{
+        max-width: 450px;
+    }
+    .subheaderDiv{
+        max-width: 495px;
+    }
 }
+@media (max-width: 770px) {
+    .leftHeadDiv, .rightHeadDiv {
+        margin: 20px auto; 
+        text-align: center; 
+        float: center;
+    }
+
+    .leftHeadDiv {
+        margin-top: 50px; 
+        width: 100%; 
+        align-self: auto;
+    }
+
+    .rightHeadDiv {
+        margin-top: 20px; 
+       align-self: auto ;
+        width: 100%;
+    }
+    .headerText{
+        font-size: 30px;
+    }
+    .subheaderText{ 
+        margin-top: -10px;
+        font-size:18px ;
+    }
+    .author{
+        font-size: 14px;
+    }
+    .headerDiv{
+        max-width: fit-content;
+    }
+    .subheaderDiv{
+        max-width: fit-content;
+    }
+}
+
