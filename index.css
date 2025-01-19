@@ -146,13 +146,13 @@ main{
 }
 
 .mainSection1{
-    max-width: 725px;
+    max-width: 695px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
 }
 .mainSectionText{
-    font-size: 18px;
+    font-size: 17px;
     font-family: "Libre Caslon Text",'Times New Roman', Times, serif ;
     color: black;
     line-height: 1.9;
@@ -253,7 +253,7 @@ main{
     margin-bottom: -12px;
 }
 .listItem{
-    font-size: 19px;
+    font-size: 17px;
     font-family: "Libre Caslon Text",'Times New Roman', Times, serif ;
     color: black;
     line-height: 1.9;
@@ -261,7 +261,7 @@ main{
     margin-bottom: 5px;
 }
 .moreStories{
-    font-size: 19px;
+    font-size: 17px;
     font-family:  "Libre Caslon Text",'Times New Roman', Times, serif ;
     color:  black;
     margin-top: 15px;
@@ -316,10 +316,54 @@ main{
     font-size: 16px; 
     font: Helvetica, sans-serif;
 }
-
 .moreLink:hover {
     text-decoration: underline; 
 }
+.footerLogo{
+    margin:auto;
+    display: block; 
+    margin-bottom: 30px;
+}
+footer a{
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer p{
+    color: rgb(102, 102, 102);
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+footer h4{
+    font-family: "Irvin-Heading",sans-serif;
+    color: white;
+}
+.footerContent {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 10px;
+   padding-left: 80px;
+   padding-bottom: 50px;
+   padding-right: 100px;
+  }
+  
+  .footerContent > div {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+  }
+  .footerSections2,.footerMore2{
+    margin-top: 50px;
+  }
+
+
 
 @media(max-width:1030px){
     .elementToHide{
