@@ -139,6 +139,11 @@
     display: table;
     clear: both;
 }
+
+
+
+
+
 main{
     background-color: white;
     margin-top: 170px;
@@ -146,6 +151,7 @@ main{
 }
 
 .mainSection1{
+    width: 40%;
     max-width: 695px;
     margin-left: auto;
     margin-right: auto;
@@ -194,26 +200,40 @@ main{
     color:  rgb(102, 102, 102);
     margin-bottom: auto;
 }
-.inputBox{
-    width: 80%;
+.inputWrapper {
+    display: flex;
+    gap: 10px; 
+    align-items: center; 
+    width: 100%;
+    max-width: 650px; 
+}
+
+.inputBox {
     padding: 17px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 200px;
     border: 1px solid black;
     box-sizing: border-box;
     margin-bottom: auto;
 }
-.SignUpButton1{
+
+.SignUpButton1 {
     background-color: black;
     color: white;
-    padding: 17px;
+    padding: 18px;
     font-family: Arial, Helvetica, sans-serif;
     border: none;
+    white-space: nowrap;    
+    margin-top: auto;
 }
-.SignUpButton1:hover{
+
+.SignUpButton1:hover {
     background-color: #0787ca;
     cursor: pointer;
 }
+
 .termsOfCondtions{
     font-size: 14px;
     font-family: sans-serif;
@@ -224,9 +244,12 @@ main{
 .subDiv{
     display: flex;
     flex-direction: column;
+    flex-shrink: 1;
     align-items: center;
     margin-top: 50px;
-    margin-left: -100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .subText{
     font-size: 18px;
@@ -239,10 +262,14 @@ main{
     color: black;
 }
 .mainSection3{
-    max-width: 725px;
+    width: 45%;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
+}
+main a{
+    color: black;
 }
 .mainSectionText3{
     font-size: 30px;
@@ -267,7 +294,8 @@ main{
     margin-top: 15px;
 }
 .mainSection4{
-    max-width: 725px;
+    width: 50%;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 50px;
@@ -319,6 +347,11 @@ main{
 .moreLink:hover {
     text-decoration: underline; 
 }
+
+
+
+
+
 footer{
     background-color: #121212;
     margin-top: -25px;
@@ -357,72 +390,75 @@ footer h4{
    padding-left: 80px;
    padding-bottom: 70px;
    padding-right: 100px;
-  }
+}
   
-  .footerContent > div {
+.footerContent > div {
     flex: 1; 
     display: flex;
     flex-direction: column; 
     gap: 10px; 
-  }
-  .footerSections2,.footerMore2{
+}
+.footerSections2,.footerMore2{
     margin-top: 50px;
-  }
-  .footerAbout {
+ }
+.footerAbout {
     display: flex; 
     justify-content: space-between; 
     gap: 20px; 
     padding-left: 80px;
     padding-bottom: 50px;
     padding-right: 100px;
-  }
+}
   
-  .footerAbout > div {
+.footerAbout > div {
     flex: 1; 
     display: flex;
     flex-direction: column; 
     gap: 10px; 
-  }
-  .socials {
+}
+.socials {
     margin-top: 20px;
-  }
-  
-  .socialContent {
+} 
+
+.socialContent {
     display: flex;
     align-items: center; 
-    gap: 1rem; 
-  }
-  
-  .copyright {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.copyright {
+    flex: 1 1 auto;
     max-width: 1100px; 
     font-size: 11px;
     line-height: 1.5;
     margin: 0;
     margin-left: 70px;
-  }
-  
-  .socialMediaIcons {
+    order: 1; 
+}
+
+.socialMediaIcons {
     display: flex;
-    gap: 1 rem; 
-    padding-left: 40px;
-  }
-  
-  .socialMediaIcons img {
-    height: 50px; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    width: auto; 
+    order: 2; 
+}
+
+.socialMediaIcons img {
+    height: 50px;
     width: 50px;
-  }
-  
-  .footerLogo {
-    margin-bottom: 20px;
-  }
-  
-  
-  
-  .socialMediaIcons img:hover {
+    flex: 1 1 auto;
+}
+
+.socialMediaIcons img:hover {
     transform: scale(1.1); 
-  }
-  
-  
+}
+.MoreText{
+    margin-bottom: 5px;
+}
 
 
 
@@ -448,7 +484,49 @@ footer h4{
     .subheaderDiv{
         max-width: 495px;
     }
+    main{
+        margin-top: 10px;
+    }
+    .mainSection1{
+        width: 90%;
+    }
+    .inputBox{
+        width:100%;
+    }
+    .inputWrapper{
+        width: 100%;
+    }
+    .footerContent {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+    .footerContent > div{
+        gap: 35px;
+    }
+    .footerSections2{
+        margin-top: 70px;
+    }
+    .footerMore2{
+        margin-top: 100px;
+    }
+    .MoreText{
+        margin-top: 50px;
+    }
+    .footerAbout {  
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 50px 20px; 
+    }
+    .footerAbout3,.footerAbout4{
+        line-height: 3;
+        margin-top: -35px;
+    }
+    .footerAbout1,.footerAbout2{
+        line-height: 3;
+    }
 }
+
+
 @media (max-width: 770px) {
     .leftHeadDiv, .rightHeadDiv {
         margin: 20px auto; 
