@@ -3,9 +3,6 @@
     margin:auto;
     display: block; 
 }
-.body{
-    background-color: black;
-}
 .navBar{
     display: flex;
     justify-content: flex-end;
@@ -55,14 +52,14 @@
 }
 .subheaderText{
     color: white;
-    font-family:"Adobe-Caslon-Pro-Italic",'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-family:"Libre Caslon Text",'Times New Roman', Times, serif ;
+    font-size: 17.5px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -30px;
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 .theLedeStyle {
     text-decoration: none;
@@ -133,9 +130,141 @@
     margin: 0 auto;
 }
 .subheaderDiv{
-    max-width: 495px;
+    max-width: 520px;
     text-align: center;
     margin: 0 auto;
+}
+.header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+main{
+    background-color: white;
+    margin-top: 170px;
+    width: 100%;
+}
+
+.mainSection1{
+    max-width: 725px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+.mainSectionText{
+    font-size: 18px;
+    font-family: "Libre Caslon Text",'Times New Roman', Times, serif ;
+    color: black;
+    line-height: 1.9;
+    font-weight: lighter;
+}
+.mainSection1::first-letter{
+    font-size: 4em; 
+    float: left; 
+    line-height: 0.8; 
+    margin-right: 10px;
+}
+.Photographer{
+    font-size: 13px;
+    font-family: sans-serif;
+    color:  rgb(102, 102, 102);
+    margin-top: 10px;
+}
+.photoDiv{
+   padding-left: 190px;
+   padding-top: 1px;
+}
+.mainSection2{
+    max-width: 725px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+.mainSectionText2{
+    font-size: 20px;
+    font-family: "Libre Caslon Text",'Times New Roman', Times, serif ;
+    color: black;
+    line-height: 1.9;
+    font-weight: lighter;
+    margin-bottom: -12px;
+}
+.reminderText{
+    font-size: 14px;
+    font-family: sans-serif;
+    color:  rgb(102, 102, 102);
+    margin-bottom: auto;
+}
+.inputBox{
+    width: 80%;
+    padding: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-bottom: auto;
+}
+.SignUpButton1{
+    background-color: black;
+    color: white;
+    padding: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+.SignUpButton1:hover{
+    background-color: #0787ca;
+    cursor: pointer;
+}
+.termsOfCondtions{
+    font-size: 14px;
+    font-family: sans-serif;
+    color:  rgb(102, 102, 102);
+    line-height: 1.2;
+    margin-top: 10px;
+}
+.subDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: -100px;
+}
+.subText{
+    font-size: 18px;
+    font-family: "Libre Caslon Text",'Times New Roman', Times, serif ;
+    color: black;
+    line-height: 1.9;
+    font-weight: lighter;
+}
+.userAgreement{
+    color: black;
+}
+.mainSection3{
+    max-width: 725px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+.mainSectionText3{
+    font-size: 30px;
+    font-family: "Libre Caslon Text",'Times New Roman', Times, serif ;
+    color: black;
+    line-height: 1.9;
+    font-weight: lighter;
+    margin-bottom: -12px;
+}
+.listItem{
+    font-size: 19px;
+    font-family: "Libre Caslon Text",'Times New Roman', Times, serif ;
+    color: black;
+    line-height: 1.9;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+.moreStories{
+    font-size: 19px;
+    font-family:  "Libre Caslon Text",'Times New Roman', Times, serif ;
+    color:  black;
+    margin-top: 15px;
 }
 @media(max-width:1030px){
     .elementToHide{
@@ -189,10 +318,10 @@
         font-size: 14px;
     }
     .headerDiv{
-        max-width: fit-content;
+        max-width: 490px;
     }
     .subheaderDiv{
-        max-width: fit-content;
+        max-width: 490px;
     }
 }
 
