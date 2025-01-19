@@ -319,16 +319,22 @@ main{
 .moreLink:hover {
     text-decoration: underline; 
 }
+footer{
+    background-color: #121212;
+    margin-top: -25px;
+    width: 100%;
+}
 .footerLogo{
     margin:auto;
     display: block; 
     margin-bottom: 30px;
+    margin-top: 25px;
 }
 footer a{
     color: rgb(102, 102, 102);
     text-decoration: none;
     font-family: sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
 }
 footer a:hover{
@@ -349,7 +355,7 @@ footer h4{
     justify-content: space-between; 
     gap: 10px;
    padding-left: 80px;
-   padding-bottom: 50px;
+   padding-bottom: 70px;
    padding-right: 100px;
   }
   
@@ -362,6 +368,61 @@ footer h4{
   .footerSections2,.footerMore2{
     margin-top: 50px;
   }
+  .footerAbout {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    padding-left: 80px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+  }
+  
+  .footerAbout > div {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+  }
+  .socials {
+    margin-top: 20px;
+  }
+  
+  .socialContent {
+    display: flex;
+    align-items: center; 
+    gap: 1rem; 
+  }
+  
+  .copyright {
+    max-width: 1100px; 
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 0;
+    margin-left: 70px;
+  }
+  
+  .socialMediaIcons {
+    display: flex;
+    gap: 1 rem; 
+    padding-left: 40px;
+  }
+  
+  .socialMediaIcons img {
+    height: 50px; 
+    width: 50px;
+  }
+  
+  .footerLogo {
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  .socialMediaIcons img:hover {
+    transform: scale(1.1); 
+  }
+  
+  
 
 
 
